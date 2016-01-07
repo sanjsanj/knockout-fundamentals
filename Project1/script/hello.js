@@ -5,7 +5,8 @@ $(function () {
         name: ko.observable('Bob'),
         changeName: function () {
             this.name('Steve');
-        }
+        },
+        nameVisible: ko.observable(true)
     };
 
     ko.applyBindings(viewModel);
