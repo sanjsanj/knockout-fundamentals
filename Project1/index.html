@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-debug.js"></script>
+    <script src="script/hello.js"></script>
+    <title>KnockoutJS Fundamentals</title>
+</head>
+<body>
+    Name: <input type="text" data-bind="value: name" />
+    <p>
+        Hello, <span data-bind="text: name"></span>
+    </p>
+    <button data-bind="click: changeName">Change Name</button>
+</body>
+</html>
