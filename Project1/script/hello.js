@@ -9,5 +9,9 @@ $(function () {
         nameVisible: ko.observable(true)
     };
 
+    viewModel.displayName = ko.computed(function () {
+        return this.name() + ' is ' + (!this.nameVisible() ? 'not ' : '') + 'visible';
+    }, viewModel);
+
     ko.applyBindings(viewModel);
 });

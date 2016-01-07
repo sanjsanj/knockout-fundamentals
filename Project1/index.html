@@ -13,6 +13,8 @@
     <input type="checkbox" data-bind="checked: nameVisible" />
     <p>
         Hello, <span data-bind="text: name, visible: nameVisible"></span>
+        <br />
+        <span data-bind="text: displayName"></span>
     </p>
     <button data-bind="click: changeName">Change Name</button>
 </body>
