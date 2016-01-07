@@ -9,6 +9,9 @@
     <title>KnockoutJS Fundamentals</title>
 </head>
 <body>
+
+    <h1>Hello World</h1>
+
     Name: <input type="text" data-bind="value: name, valueUpdate: 'afterkeydown'" />
     <input type="checkbox" data-bind="checked: nameVisible" />
     <p>
@@ -17,5 +20,14 @@
         <span data-bind="text: displayName"></span>
     </p>
     <button data-bind="click: changeName">Change Name</button>
+
+    <h1>Names Array</h1>
+
+    <button data-bind="click: addItem">Add</button>
+    <button data-bind="click: removeItem">Remove</button>
+    <ul data-bind="template: { name: 'listTemplate', foreach: list }"></ul>
+    <script id="listTemplate" type="text/html">
+        <li data-bind="text: name"></li>
+    </script>
 </body>
 </html>
