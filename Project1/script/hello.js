@@ -2,9 +2,9 @@
 
 $(function () {
     var viewModel = {
-        name: 'Bob',
+        name: ko.observable('Bob'),
         changeName: function () {
-            this.name = 'Steve';
+            this.name('Steve');
         }
     };
 

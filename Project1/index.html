@@ -9,7 +9,7 @@
     <title>KnockoutJS Fundamentals</title>
 </head>
 <body>
-    Name: <input type="text" data-bind="value: name" />
+    Name: <input type="text" data-bind="value: name, valueUpdate: 'afterkeydown'" />
     <p>
         Hello, <span data-bind="text: name"></span>
     </p>
